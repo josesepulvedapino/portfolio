@@ -11,4 +11,10 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'portfolio';
+
+  selectedItem: string = '';
+  
+  selectItem(selectedItem : string) {
+    this.selectedItem = selectedItem;
+  }
 }

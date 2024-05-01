@@ -1,0 +1,46 @@
+.portfolio {
+    height: 100%;
+    padding: 24px;
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        transition: 0.4s !important;
+        transition-timing-function: cubic-bezier(
+          0.175,
+          0.885,
+          0.32,
+          1.275
+        ) !important;
+        color: #585858 !important;
+      }
+    }
+    .portfolio-header {
+      height: fit-content;
+      width: fit-content;
+      h1 {
+        font-weight: 300;
+      }
+    
+      ol {
+        li {
+          width: fit-content;
+          display: inline-block;
+        }
+      }
+  
+     
+    }
+    
+    .portfolio-main {
+      height: calc(100% - 208px);
+      section.about-me {
+        width: 500px;
+        height: 500px;
+      }
+      section.contact {
+        
+      }
+    }
+    
+  }
