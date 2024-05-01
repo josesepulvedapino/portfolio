@@ -5,9 +5,7 @@ html {
   height: 100%;
 }
 html,
-
 body {
-  
 }
 
 body {
@@ -49,6 +47,10 @@ body {
   animation: scale-in-center 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
+.focus-in-expand {
+  animation: focus-in-expand 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 @keyframes scale-in-tl {
   0% {
     transform: scale(0);
@@ -71,4 +73,22 @@ body {
     transform: scale(1);
     opacity: 1;
   }
+}
+
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.copyright {
+  position: fixed;
+  right: 24px;
+  bottom: 0px;
 }
